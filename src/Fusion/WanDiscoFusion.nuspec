@@ -3,12 +3,13 @@
   <metadata>
     <id>WanDiscoFusion</id>
     <version>0.1.0</version>
-    <authors></authors>
-    <owners></owners>
+    <authors>Wandisco.Inc</authors>
+    <owners>Wandisco.Inc</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <licenseUrl></licenseUrl>
-    <projectUrl></projectUrl>
-    <description></description>
+    <!--TODO update license URL-->
+    <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
+    <projectUrl>https://github.com/Azure/azure-powershell</projectUrl>
+    <description>A powershell module for Wandisco Fusion resources</description>
     <releaseNotes></releaseNotes>
     <copyright></copyright>
     <tags></tags>
