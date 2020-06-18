@@ -31,11 +31,11 @@ These provide functionality to our HTTP pipeline and other useful features. In s
 
 ### Attributes
 For processing the cmdlets, we've created some additional attributes:
-- `Sample.API.Models.DescriptionAttribute`
+- `Wandisco.Fusion.Models.DescriptionAttribute`
   - Used in C# cmdlets to provide a high-level description of the cmdlet. This is propegated to reference documentation via [help comments](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_comment_based_help) in the exported scripts.
-- `Sample.API.Models.DoNotExportAttribute`
+- `Wandisco.Fusion.Models.DoNotExportAttribute`
   - Used in C# and script cmdlets to suppress creating an exported cmdlet at build-time. These cmdlets will *not be exposed* by `WanDiscoFusion`.
-- `Sample.API.Models.InternalExportAttribute`
+- `Wandisco.Fusion.Models.InternalExportAttribute`
   - Used in C# cmdlets to route exported cmdlets to the `../internal`, which are *not exposed* by `WanDiscoFusion`. For more information, see [readme.md](../internal/readme.md) in the `../internal` folder.
-- `Sample.API.Models.ProfileAttribute`
+- `Wandisco.Fusion.Models.ProfileAttribute`
   - Used in C# and script cmdlets to define which Azure profiles the cmdlet supports. This is only supported for Azure (`--azure`) modules.

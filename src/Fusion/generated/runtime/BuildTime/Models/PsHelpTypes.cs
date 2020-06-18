@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Management.Automation;
 
-namespace Sample.API.Runtime.PowerShell
+namespace Wandisco.Fusion.Runtime.PowerShell
 {
     internal class PsHelpInfo
     {

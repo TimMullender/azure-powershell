@@ -5,7 +5,7 @@
 ﻿using System;
 using System.Reflection;
 
-namespace Sample.API.Runtime.Json
+namespace Wandisco.Fusion.Runtime.Json
 {
     public sealed class StringLikeConverter : IJsonConverter
     {

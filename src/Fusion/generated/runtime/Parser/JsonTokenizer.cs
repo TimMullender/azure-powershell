@@ -5,7 +5,7 @@
 ﻿using System;
 using System.Text;
 
-namespace Sample.API.Runtime.Json
+namespace Wandisco.Fusion.Runtime.Json
 {
     using System.IO;
     

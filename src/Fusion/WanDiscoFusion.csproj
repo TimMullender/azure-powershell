@@ -6,7 +6,7 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <OutputType>Library</OutputType>
     <AssemblyName>WanDiscoFusion.private</AssemblyName>
-    <RootNamespace>Sample.API</RootNamespace>
+    <RootNamespace>Wandisco.Fusion</RootNamespace>
     <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <OutputPath>./bin</OutputPath>

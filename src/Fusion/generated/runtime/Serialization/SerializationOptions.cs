@@ -5,7 +5,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace Sample.API.Runtime.Json
+namespace Wandisco.Fusion.Runtime.Json
 {
     internal class SerializationOptions
     {

@@ -2,7 +2,7 @@
  *  Copyright (c) Microsoft Corporation. All rights reserved.
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
-namespace Sample.API.Runtime.PowerShell
+namespace Wandisco.Fusion.Runtime.PowerShell
 {
     using System.Management.Automation;
     using System.Management.Automation.Host;
@@ -11,8 +11,8 @@ namespace Sample.API.Runtime.PowerShell
 
     internal interface IAsyncCommandRuntimeExtensions
     {
-        Sample.API.Runtime.SendAsyncStep Wrap(Sample.API.Runtime.SendAsyncStep func);
-        System.Collections.Generic.IEnumerable<Sample.API.Runtime.SendAsyncStep> Wrap(System.Collections.Generic.IEnumerable<Sample.API.Runtime.SendAsyncStep> funcs);
+        Wandisco.Fusion.Runtime.SendAsyncStep Wrap(Wandisco.Fusion.Runtime.SendAsyncStep func);
+        System.Collections.Generic.IEnumerable<Wandisco.Fusion.Runtime.SendAsyncStep> Wrap(System.Collections.Generic.IEnumerable<Wandisco.Fusion.Runtime.SendAsyncStep> funcs);
 
         T ExecuteSync<T>(System.Func<T> step);
     }
@@ -777,8 +777,8 @@ namespace Sample.API.Runtime.PowerShell
                 throw ProcessRecordAsyncTask.Exception;
             }
         }
-        public Sample.API.Runtime.SendAsyncStep Wrap(Sample.API.Runtime.SendAsyncStep func) => func.Target.GetType().Name != "Closure" ? func : (p1, p2, p3) => ExecuteSync<System.Threading.Tasks.Task<System.Net.Http.HttpResponseMessage>>(() => func(p1, p2, p3));
-        public System.Collections.Generic.IEnumerable<Sample.API.Runtime.SendAsyncStep> Wrap(System.Collections.Generic.IEnumerable<Sample.API.Runtime.SendAsyncStep> funcs) => funcs?.Select(Wrap);
+        public Wandisco.Fusion.Runtime.SendAsyncStep Wrap(Wandisco.Fusion.Runtime.SendAsyncStep func) => func.Target.GetType().Name != "Closure" ? func : (p1, p2, p3) => ExecuteSync<System.Threading.Tasks.Task<System.Net.Http.HttpResponseMessage>>(() => func(p1, p2, p3));
+        public System.Collections.Generic.IEnumerable<Wandisco.Fusion.Runtime.SendAsyncStep> Wrap(System.Collections.Generic.IEnumerable<Wandisco.Fusion.Runtime.SendAsyncStep> funcs) => funcs?.Select(Wrap);
 
         public T ExecuteSync<T>(System.Func<T> step)
         {

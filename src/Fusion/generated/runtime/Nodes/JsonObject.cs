@@ -7,7 +7,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 
-namespace Sample.API.Runtime.Json
+namespace Wandisco.Fusion.Runtime.Json
 {
     public partial class JsonObject : JsonNode, IDictionary<string, JsonNode>
     {

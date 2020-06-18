@@ -3,7 +3,7 @@
   $null = Import-Module -Name (Join-Path $PSScriptRoot './bin/WanDiscoFusion.private.dll')
 
   # Get the private module's instance
-  $instance = [Sample.API.Module]::Instance
+  $instance = [Wandisco.Fusion.Module]::Instance
 
  
   # Load the custom module

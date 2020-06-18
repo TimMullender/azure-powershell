@@ -5,7 +5,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace Sample.API.Runtime.PowerShell
+namespace Wandisco.Fusion.Runtime.PowerShell
 {
     internal static class StringExtensions
     {

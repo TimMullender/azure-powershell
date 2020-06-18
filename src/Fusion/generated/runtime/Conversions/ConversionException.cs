@@ -4,7 +4,7 @@
  *--------------------------------------------------------------------------------------------*/
 ﻿using System;
 
-namespace Sample.API.Runtime.Json
+namespace Wandisco.Fusion.Runtime.Json
 {
     internal class ConversionException : Exception
     {

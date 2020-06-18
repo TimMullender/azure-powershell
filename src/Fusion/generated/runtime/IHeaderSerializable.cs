@@ -5,7 +5,7 @@
 
 using System;
 
-namespace Sample.API.Runtime
+namespace Wandisco.Fusion.Runtime
 {
     public interface IHeaderSerializable
     {

@@ -4,7 +4,7 @@
  *--------------------------------------------------------------------------------------------*/
 using System;
 
-namespace Sample.API
+namespace Wandisco.Fusion
 {
     [AttributeUsage(AttributeTargets.Class)]
     public class DescriptionAttribute : Attribute

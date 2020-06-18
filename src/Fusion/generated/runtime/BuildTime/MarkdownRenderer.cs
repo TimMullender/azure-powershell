@@ -7,10 +7,10 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
-using static Sample.API.Runtime.PowerShell.MarkdownTypesExtensions;
-using static Sample.API.Runtime.PowerShell.PsProxyOutputExtensions;
+using static Wandisco.Fusion.Runtime.PowerShell.MarkdownTypesExtensions;
+using static Wandisco.Fusion.Runtime.PowerShell.PsProxyOutputExtensions;
 
-namespace Sample.API.Runtime.PowerShell
+namespace Wandisco.Fusion.Runtime.PowerShell
 {
     internal static class MarkdownRenderer
     {

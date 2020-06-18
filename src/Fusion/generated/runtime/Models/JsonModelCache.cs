@@ -5,7 +5,7 @@
 ﻿using System;
 using System.Runtime.CompilerServices;
 
-namespace Sample.API.Runtime.Json
+namespace Wandisco.Fusion.Runtime.Json
 {
     internal static class JsonModelCache
     {

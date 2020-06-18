@@ -6,7 +6,7 @@ using System.IO;
 using System.Xml;
 using System.Xml.Serialization;
 
-namespace Sample.API.Runtime.PowerShell
+namespace Wandisco.Fusion.Runtime.PowerShell
 {
     internal static class XmlExtensions
     {

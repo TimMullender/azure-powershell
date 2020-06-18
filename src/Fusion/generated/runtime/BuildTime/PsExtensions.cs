@@ -9,7 +9,7 @@ using System.Linq;
 using System.Management.Automation;
 using System.Reflection;
 
-namespace Sample.API.Runtime.PowerShell
+namespace Wandisco.Fusion.Runtime.PowerShell
 {
     internal static class PsExtensions
     {

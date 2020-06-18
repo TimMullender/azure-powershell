@@ -3,12 +3,12 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-namespace Sample.API.Runtime
+namespace Wandisco.Fusion.Runtime
 {
     using System;
     using System.Net.Http;
     using System.Net.Http.Headers;
-    using static Sample.API.Runtime.Extensions;
+    using static Wandisco.Fusion.Runtime.Extensions;
 
     public class RestException : Exception, IDisposable
     {
@@ -40,14 +40,14 @@ namespace Sample.API.Runtime
             try
             {
                 // try to parse the body as JSON, and see if a code and message are in there.
-                var json = Sample.API.Runtime.Json.JsonNode.Parse(ResponseBody) as Sample.API.Runtime.Json.JsonObject;
+                var json = Wandisco.Fusion.Runtime.Json.JsonNode.Parse(ResponseBody) as Wandisco.Fusion.Runtime.Json.JsonObject;
 
                 // see if there is an error block in the body
                 json = json.Property("error") ?? json;
 
-                { Code = If(json?.PropertyT<Sample.API.Runtime.Json.JsonString>("code"), out var c) ? (string)c : (string)StatusCode.ToString(); }
-                { message = If(json?.PropertyT<Sample.API.Runtime.Json.JsonString>("message"), out var m) ? (string)m : (string)Message; }
-                { Action = If(json?.PropertyT<Sample.API.Runtime.Json.JsonString>("action"), out var a) ? (string)a : (string)Action; }
+                { Code = If(json?.PropertyT<Wandisco.Fusion.Runtime.Json.JsonString>("code"), out var c) ? (string)c : (string)StatusCode.ToString(); }
+                { message = If(json?.PropertyT<Wandisco.Fusion.Runtime.Json.JsonString>("message"), out var m) ? (string)m : (string)Message; }
+                { Action = If(json?.PropertyT<Wandisco.Fusion.Runtime.Json.JsonString>("action"), out var a) ? (string)a : (string)Action; }
             }
 #if DEBUG
             catch (System.Exception E)

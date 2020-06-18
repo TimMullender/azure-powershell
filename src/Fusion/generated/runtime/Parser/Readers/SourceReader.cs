@@ -6,7 +6,7 @@
 using System.Globalization;
 using System.IO;
 
-namespace Sample.API.Runtime.Json
+namespace Wandisco.Fusion.Runtime.Json
 {
     public sealed class SourceReader : IDisposable
     {

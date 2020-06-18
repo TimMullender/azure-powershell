@@ -10,7 +10,7 @@ using System.Management.Automation;
 using System.Reflection;
 using System.Text;
 
-namespace Sample.API.Runtime.PowerShell
+namespace Wandisco.Fusion.Runtime.PowerShell
 {
   [Cmdlet(VerbsData.Export, "ModelSurface")]
   [DoNotExport]
@@ -23,8 +23,8 @@ namespace Sample.API.Runtime.PowerShell
     [Parameter]
     public bool UseExpandedFormat { get; set; }
 
-    private const string ModelNamespace = @"Sample.API.Models";
-    private const string SupportNamespace = @"Sample.API.Support";
+    private const string ModelNamespace = @"Wandisco.Fusion.Models";
+    private const string SupportNamespace = @"Wandisco.Fusion.Support";
 
     protected override void ProcessRecord()
     {

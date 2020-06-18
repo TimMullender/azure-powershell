@@ -3,9 +3,9 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 using System.Management.Automation;
-using static Sample.API.Runtime.PowerShell.PsHelpers;
+using static Wandisco.Fusion.Runtime.PowerShell.PsHelpers;
 
-namespace Sample.API.Runtime.PowerShell
+namespace Wandisco.Fusion.Runtime.PowerShell
 {
   [Cmdlet(VerbsCommon.Get, "ModuleGuid")]
   [DoNotExport]

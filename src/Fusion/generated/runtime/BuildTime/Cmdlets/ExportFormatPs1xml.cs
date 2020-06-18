@@ -9,7 +9,7 @@ using System.Linq;
 using System.Management.Automation;
 using System.Reflection;
 
-namespace Sample.API.Runtime.PowerShell
+namespace Wandisco.Fusion.Runtime.PowerShell
 {
   [Cmdlet(VerbsData.Export, "FormatPs1xml")]
   [DoNotExport]
@@ -19,8 +19,8 @@ namespace Sample.API.Runtime.PowerShell
     [ValidateNotNullOrEmpty]
     public string FilePath { get; set; }
 
-    private const string ModelNamespace = @"Sample.API.Models";
-    private const string SupportNamespace = @"Sample.API.Support";
+    private const string ModelNamespace = @"Wandisco.Fusion.Models";
+    private const string SupportNamespace = @"Wandisco.Fusion.Support";
     private static readonly bool IsAzure = Convert.ToBoolean(@"false");
 
     protected override void ProcessRecord()

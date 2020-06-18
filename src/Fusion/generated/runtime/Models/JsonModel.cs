@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Runtime.Serialization;
 using System.Reflection;
 
-namespace Sample.API.Runtime.Json
+namespace Wandisco.Fusion.Runtime.Json
 {
     internal class JsonModel
     {

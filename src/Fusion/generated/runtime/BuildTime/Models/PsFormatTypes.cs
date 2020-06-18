@@ -8,7 +8,7 @@ using System.Linq;
 using System.Reflection;
 using System.Xml.Serialization;
 
-namespace Sample.API.Runtime.PowerShell
+namespace Wandisco.Fusion.Runtime.PowerShell
 {
     internal class ViewParameters
     {

@@ -8,9 +8,9 @@ using System.Linq;
 using System.Management.Automation;
 using System.Text;
 using System.Text.RegularExpressions;
-using static Sample.API.Runtime.PowerShell.PsHelpers;
+using static Wandisco.Fusion.Runtime.PowerShell.PsHelpers;
 
-namespace Sample.API.Runtime.PowerShell
+namespace Wandisco.Fusion.Runtime.PowerShell
 {
   [Cmdlet(VerbsData.Export, "Psd1")]
   [DoNotExport]

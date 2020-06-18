@@ -2,9 +2,9 @@
  *  Copyright (c) Microsoft Corporation. All rights reserved.
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
-namespace Sample.API.Runtime.PowerShell
+namespace Wandisco.Fusion.Runtime.PowerShell
 {
-    using static Sample.API.Runtime.Extensions;
+    using static Wandisco.Fusion.Runtime.Extensions;
 
     [System.ComponentModel.TypeConverter(typeof(AsyncOperationResponseTypeConverter))]
     public class AsyncOperationResponse
@@ -14,19 +14,19 @@ namespace Sample.API.Runtime.PowerShell
         public AsyncOperationResponse()
         {
         }
-        internal AsyncOperationResponse(Sample.API.Runtime.Json.JsonObject json)
+        internal AsyncOperationResponse(Wandisco.Fusion.Runtime.Json.JsonObject json)
         {
             // pull target 
-            { Target = If(json?.PropertyT<Sample.API.Runtime.Json.JsonString>("target"), out var _v) ? (string)_v : (string)Target; }
+            { Target = If(json?.PropertyT<Wandisco.Fusion.Runtime.Json.JsonString>("target"), out var _v) ? (string)_v : (string)Target; }
         }
         public string ToJsonString()
         {
             return $"{{ \"target\" : \"{this.Target}\" }}";
         }
 
-        public static AsyncOperationResponse FromJson(Sample.API.Runtime.Json.JsonNode node)
+        public static AsyncOperationResponse FromJson(Wandisco.Fusion.Runtime.Json.JsonNode node)
         {
-            return node is Sample.API.Runtime.Json.JsonObject json ? new AsyncOperationResponse(json) : null;
+            return node is Wandisco.Fusion.Runtime.Json.JsonObject json ? new AsyncOperationResponse(json) : null;
         }
 
 
@@ -35,7 +35,7 @@ namespace Sample.API.Runtime.PowerShell
         /// </summary>
         /// <param name="jsonText">a string containing a JSON serialized instance of this model.</param>
         /// <returns>an instance of the <see cref="className" /> model class.</returns>
-        public static AsyncOperationResponse FromJsonString(string jsonText) => FromJson(Sample.API.Runtime.Json.JsonNode.Parse(jsonText));
+        public static AsyncOperationResponse FromJsonString(string jsonText) => FromJson(Wandisco.Fusion.Runtime.Json.JsonNode.Parse(jsonText));
 
     }
 
@@ -94,7 +94,7 @@ namespace Sample.API.Runtime.PowerShell
             try
             {
                 string text = sourceValue.ToString()?.Trim();
-                return true == text?.StartsWith("{") && true == text?.EndsWith("}") && Sample.API.Runtime.Json.JsonNode.Parse(text).Type == Sample.API.Runtime.Json.JsonType.Object;
+                return true == text?.StartsWith("{") && true == text?.EndsWith("}") && Wandisco.Fusion.Runtime.Json.JsonNode.Parse(text).Type == Wandisco.Fusion.Runtime.Json.JsonType.Object;
             }
             catch
             {

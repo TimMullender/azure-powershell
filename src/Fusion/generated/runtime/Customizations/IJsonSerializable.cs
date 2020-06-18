@@ -3,10 +3,10 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-using Sample.API.Runtime.Json;
+using Wandisco.Fusion.Runtime.Json;
 using System;
 
-namespace Sample.API.Runtime
+namespace Wandisco.Fusion.Runtime
 {
     public interface IJsonSerializable
     {
@@ -128,7 +128,7 @@ namespace Sample.API.Runtime
         internal static JsonNode ToJsonValue(object value)
         {
             // things that implement our interface are preferred. 
-            if (value is Sample.API.Runtime.IJsonSerializable jsonSerializable)
+            if (value is Wandisco.Fusion.Runtime.IJsonSerializable jsonSerializable)
             {
                 return jsonSerializable.ToJson();
             }
@@ -148,7 +148,7 @@ namespace Sample.API.Runtime
             // dictionaries are objects that should be able to serialize
             if (value is System.Collections.Generic.IDictionary<string, object> dictionary)
             {
-                return Sample.API.Runtime.JsonSerializable.ToJson(dictionary, null);
+                return Wandisco.Fusion.Runtime.JsonSerializable.ToJson(dictionary, null);
             }
 
             // enumerable collections are handled like arrays (again, fallback to ToJson()/ToJsonString() or literal JsonString) 

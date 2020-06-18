@@ -4,7 +4,7 @@
  *--------------------------------------------------------------------------------------------*/
 ﻿using System.Text;
 
-namespace Sample.API.Runtime.Json
+namespace Wandisco.Fusion.Runtime.Json
 {
     internal static class StringBuilderExtensions
     {

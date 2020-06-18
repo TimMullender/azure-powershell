@@ -10,7 +10,7 @@ using System.Linq;
 using System.Management.Automation;
 using Pwsh = System.Management.Automation.PowerShell;
 
-namespace Sample.API.Runtime.PowerShell
+namespace Wandisco.Fusion.Runtime.PowerShell
 {
     internal static class PsHelpers
     {

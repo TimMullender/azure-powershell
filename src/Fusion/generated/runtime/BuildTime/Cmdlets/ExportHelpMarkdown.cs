@@ -5,9 +5,9 @@
 ﻿using System;
 using System.Linq;
 using System.Management.Automation;
-using static Sample.API.Runtime.PowerShell.MarkdownRenderer;
+using static Wandisco.Fusion.Runtime.PowerShell.MarkdownRenderer;
 
-namespace Sample.API.Runtime.PowerShell
+namespace Wandisco.Fusion.Runtime.PowerShell
 {
   [Cmdlet(VerbsData.Export, "HelpMarkdown")]
   [DoNotExport]

@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Web;
 
-namespace Sample.API.Runtime.Json
+namespace Wandisco.Fusion.Runtime.Json
 {
     internal class JsonWriter
     {

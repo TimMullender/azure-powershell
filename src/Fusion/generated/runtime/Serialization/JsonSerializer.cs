@@ -6,7 +6,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-namespace Sample.API.Runtime.Json
+namespace Wandisco.Fusion.Runtime.Json
 {
     internal class JsonSerializer
     {
